@@ -19,11 +19,19 @@ import {
 import Entype from 'react-native-vector-icons/Entypo';
 
 import HomeScreen from './src/screens/Home';
+import SearchResults from './src/screens/SearchResults';
+import Post from './src/components/Post';
+
+import feed from './assets/data/feed';
+
+const post1 = feed[0];
 
 const App = () => {
   return (
     <SafeAreaView>
-      <HomeScreen />
+      {/* <HomeScreen /> */}
+      {/* <Post post={post1} /> */}
+      <SearchResults />
     </SafeAreaView>
   );
 };
