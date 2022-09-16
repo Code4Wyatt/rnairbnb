@@ -13,7 +13,7 @@ const HomeScreen = props => {
           style={styles.searchButton}
           onPress={() => console.log('Search Btn Clicked')}>
           <Fontisto name="search" size={25} color={'#f15454'} />
-          <Text style={styles.buttonText}> ?Where are you going?</Text>
+          <Text style={styles.buttonText}> Where are you going?</Text>
         </Pressable>
         <Text style={styles.title}>Go Near</Text>
 
