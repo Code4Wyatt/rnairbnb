@@ -7,35 +7,28 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {StatusBar} from 'react-native';
 import Entype from 'react-native-vector-icons/Entypo';
+import 'react-native-gesture-handler';
 
+import Router from './src/navigation/router';
+
+// Screens
 import HomeScreen from './src/screens/Home';
 import SearchResults from './src/screens/SearchResults';
+import DestinationSearch from './src/screens/DestinationSearch';
+import Guests from './src/screens/Guests';
+
+// Components
 import Post from './src/components/Post';
-
-import feed from './assets/data/feed';
-
-const post1 = feed[0];
 
 const App = () => {
   return (
-    <SafeAreaView>
-      {/* <HomeScreen /> */}
-      {/* <Post post={post1} /> */}
-      <SearchResults />
-    </SafeAreaView>
+    <>
+      <StatusBar barStyle="dark-content" />
+      <Router />
+    </>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;
