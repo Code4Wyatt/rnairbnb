@@ -57,7 +57,7 @@ const HomeTabNavigator = props => {
       />
       <Tab.Screen
         name={'Profile'}
-        component={GuestsScreen}
+        component={GuestsScreencd}
         options={{
           tabBarIcon: ({color}) => (
             <EvilIcons name="user" size={25} color={color} />
