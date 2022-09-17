@@ -82,7 +82,7 @@ const GuestsScreen = (props) => {
         </View>
       </View>
 
-      {/* <Pressable
+      <Pressable
         onPress={() =>
           navigation.navigate('Home', {
             screen: 'Explore',
@@ -107,7 +107,7 @@ const GuestsScreen = (props) => {
         <Text style={{fontSize: 20, color: 'white', fontWeight: 'bold'}}>
           Search
         </Text>
-      </Pressable> */}
+      </Pressable>
     </View>
   );
 };

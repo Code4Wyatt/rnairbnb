@@ -2,12 +2,14 @@ import React, {useState} from "react";
 import { View, TextInput, Text, FlatList, Pressable } from "react-native";
 import styles from './styles.js';
 import SuggestionRow from "./SuggestionRow";
-
+import { useNavigation } from '@react-navigation/native';
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 
 const DestinationSearchScreen = (props) => {
+  const [inputText, setInputText] = useState('');
 
-
+  const navigation = useNavigation();
+  
   return (
     <View style={styles.container}>
       <GooglePlacesAutocomplete

@@ -10,6 +10,8 @@ import React from 'react';
 import {StatusBar} from 'react-native';
 import Entype from 'react-native-vector-icons/Entypo';
 import 'react-native-gesture-handler';
+import { withAuthenticator } from '@aws-amplify/react-native';
+import '@aws-amplify/ui-react/styles.css';
 
 import Router from './src/navigation/router';
 
@@ -31,4 +33,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);
