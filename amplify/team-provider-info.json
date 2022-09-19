@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rna-dev-205242-authRole",
+      "UnauthRoleArn": "arn:aws:iam::864935366651:role/amplify-rna-dev-205242-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::864935366651:role/amplify-rna-dev-205242-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-rna-dev-205242-deployment",
+      "UnauthRoleName": "amplify-rna-dev-205242-unauthRole",
+      "StackName": "amplify-rna-dev-205242",
+      "StackId": "arn:aws:cloudformation:eu-north-1:864935366651:stack/amplify-rna-dev-205242/a0f40b70-3854-11ed-b20f-0ebbf34d4ca0",
+      "AmplifyAppId": "d1111jsd0d9dxs"
+    }
+  }
+}
