@@ -5,7 +5,7 @@ import HomeScreen from '../screens/Home';
 import DestinationSearch from '../screens/DestinationSearch';
 import GuestsScreen from '../screens/Guests';
 import ProfileScreen from '../screens/Profile';
-
+import SearchResultsScreen from '../screens/SearchResults';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
@@ -31,7 +31,7 @@ const HomeTabNavigator = props => {
       />
       <Tab.Screen
         name={'Saved'}
-        component={HomeScreen}
+        component={SearchResultsScreen}
         options={{
           tabBarIcon: ({color}) => (
             <FontAwesome name="heart-o" size={25} color={color} />
