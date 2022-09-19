@@ -1,6 +1,7 @@
 import React from "react";
 import { View, FlatList } from "react-native";
 import Post from '../../components/Post';
+import { API, grapqlOperation } from 'aws-amplify';
 
 import feed from '../../../assets/data/feed';
 
