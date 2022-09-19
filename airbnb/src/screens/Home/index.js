@@ -1,12 +1,26 @@
 import {View, Text, ImageBackground, Pressable} from 'react-native';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './styles';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import { useNavigation } from '@react-navigation/native';
-
+import { API, grapqlOperation } from 'aws-amplify';
+import { listPosts } from '../../graphql/queries';
 const HomeScreen = props => {
   const navigation = useNavigation();
+ useEffect(() => {
 
+    const fetchPosts = async () => {
+    try {
+      const postResult = await API.graphql(
+        grapqlOperation(listPosts)
+      )
+      console.log(postResult);
+    } catch (error) {
+      console.log(error);
+    }
+    }
+    fetchPosts();
+  }, [])
   return (
     <View>
       <ImageBackground

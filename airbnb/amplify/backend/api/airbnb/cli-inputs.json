@@ -1,7 +1,7 @@
 {
   "version": 1,
   "serviceConfiguration": {
-    "apiName": "rna",
+    "apiName": "airbnb",
     "serviceName": "AppSync",
     "defaultAuthType": {
       "mode": "API_KEY",

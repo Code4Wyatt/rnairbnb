@@ -1,5 +1,5 @@
 {
-  "AppSyncApiName": "rna",
+  "AppSyncApiName": "airbnb",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false
 }

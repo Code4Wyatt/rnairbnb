@@ -1,12 +1,12 @@
 {
-  "projectName": "rna",
+  "projectName": "airbnb",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
-    "framework": "none",
+    "framework": "react-native",
     "config": {
       "SourceDir": "src",
-      "DistributionDir": "dist",
+      "DistributionDir": "/",
       "BuildCommand": "npm.cmd run-script build",
       "StartCommand": "npm.cmd run-script start"
     }
